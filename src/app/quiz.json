@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "question": "Which type of JavaScript language is ",
+    "option": [
+      {
+        "optionid": 1,
+        "name": "Object-Oriented"
+      },
+      {
+        "optionid": 2,
+        "name": "Object-Based"
+      },
+      {
+        "optionid": 3,
+        "name": "Assembly-language"
+      },
+      {
+        "optionid": 4,
+        "name": "High-level"
+      }
+    ],
+    "answer": 2,
+    "selected": 0,
+    "explanation": "Object-Oriented: JavaScript is not a pure OOP's (object oriented programming) based languages such as PHP, java or many other languages, although it is an object-based language."
+  },
+  {
+    "id": 2,
+    "question": "In the JavaScript, which one of the following is not considered as an error:",
+    "option": [
+      {
+        "optionid": 1,
+        "name": " Syntax error"
+      },
+      {
+        "optionid": 2,
+        "name": "Missing of semicolons"
+      },
+      {
+        "optionid": 3,
+        "name": "Division by zero"
+      },
+      {
+        "optionid": 4,
+        "name": "Missing of Bracket"
+      }
+    ],
+    "answer": 3,
+    "selected": 0,
+    "explanation": "Division by zero: Yes, you heard right that division of any integer by zero is not an error in the JavaScript. It just prints the infinity as a result."
+  },
+  {
+    "id": 3,
+    "question": "Which one of the following also known as Conditional Expression:",
+    "option": [
+      {
+        "optionid": 1,
+        "name": " Alternative to if-else"
+      },
+      {
+        "optionid": 2,
+        "name": "Switch statement"
+      },
+      {
+        "optionid": 3,
+        "name": "If-then-else statement"
+      },
+      {
+        "optionid": 4,
+        "name": "immediate if"
+      }
+    ],
+    "answer": 4,
+    "selected": 0,
+    "explanation": "immediate if: A conditional expression can only evaluate two things, which either true or false, that are purely based on the evaluation of the condition"
+  },
+  {
+    "id": 4,
+    "question": "In JavaScript, what is a block of statement?",
+    "option": [
+      {
+        "optionid": 1,
+        "name": "Conditional block"
+      },
+      {
+        "optionid": 2,
+        "name": "block that combines a number of statements into a single compound statement"
+      },
+      {
+        "optionid": 3,
+        "name": "both conditional block and a single statement"
+      },
+      {
+        "optionid": 4,
+        "name": "block that contains a single statement"
+      }
+    ],
+    "answer": 2,
+    "selected": 0,
+    "explanation": "block that combines a number of statements into a single compound statement: A block of statement can be understand as the set of the zero or more statements. In general, a block of statement has common definition which combines one or a number of statements into a single statement for ease"
+  },
+  {
+    "id": 5,
+    "question": "When interpreter encounters an empty statements, what it will do:",
+    "option": [
+      {
+        "optionid": 1,
+        "name": "Shows a warning"
+      },
+      {
+        "optionid": 2,
+        "name": "Prompts to complete the statement"
+      },
+      {
+        "optionid": 3,
+        "name": "Throws an error"
+      },
+      {
+        "optionid": 4,
+        "name": "Ignores the statements"
+      }
+    ],
+    "answer": 4,
+    "selected": 0,
+    "explanation": "Ignores the statements: In JavaScript, when the interpreter encounters a empty statements it normally ignores or not response to that empty statement. The empty statements also sometimes very useful like we use the empty statements for creating loop for nothing."
+  }
+]

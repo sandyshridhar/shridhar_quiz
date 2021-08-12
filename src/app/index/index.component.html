@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="col-1">
+
+    </div>
+
+    <div class="col-10 " style="background-color:white;">
+        <div class="row" style="padding-left: 15%;">
+            <div class="col-1">
+
+            </div>
+            <div class="col-8">
+                <div *ngIf="gameover" style="margin-left: 30%;padding-top: 5px;">
+                    <h2>Result is: {{correct}}/{{questions.length}}</h2>
+                    <hr>
+                    <div *ngIf="start">
+                        <h5>{{currentQuestionSet.question}}</h5>
+                    </div>
+                    <div *ngFor="let x of questions;index as j">
+                        {{x.id}} {{x.question}}
+
+                        <div *ngFor="let y of res;index as i">
+                            <div style="background-color: #eee; ">
+                                
+                                    <p style="color: green;" *ngIf="y==x.answer && j==i">correct</p>
+                               
+                                    <p style="color: red;" *ngIf="y=='incorrect'&&j==i">Incorrect &nbsp;&nbsp;&nbsp; <br> Correct Ans Is:{{x.explanation}}</p>
+                                    
+                             
+                                    <p style="color: rgb(243, 184, 47);" *ngIf="y=='notattempt'&&j==i">notattempt</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div *ngIf="start" class="divqsn">
+                    <h4 style="float: right;">{{currentIndex+1}}/{{questions.length}}</h4><br />
+                    <h3>{{currentQuestionSet.id}} {{currentQuestionSet.question}}</h3>
+                    <div *ngFor="let o of currentQuestionSet.option" style="padding:10px">
+                        <input type="radio" name="{{currentQuestionSet.id}}" [value]="o.optionid"
+                            [(ngModel)]="currentQuestionSet.selected" />{{o.id}} {{o.name}}
+                    </div>
+                </div>
+                <div *ngIf="start" style="margin-left: 30%;">
+                    <input type="submit" *ngIf="(currentIndex+1) != questions.length; else elseblock" value="Next"
+                        (click)="next()" class="btn btn-primary submitbtncontent" sty />
+                    <ng-template #elseblock>
+                        <input type="submit" class="btn btn-outline-success submitbtncontent " value="Submit"
+                            (click)="submit()" />
+                    </ng-template>
+                </div>
+                <div style="margin-left: 30%;">
+                    <!-- //play btn -->
+                    <input type="submit" class="btn btn-outline-primary submitbtncontent" (click)="startQuiz()"
+                        value="{{buttonname}}" *ngIf="!start">&nbsp;&nbsp;&nbsp;
+                    <input type="submit" class="btn btn-outline-success submitbtncontent " value="Submit"
+                        (click)="submit()" style="visibility: hidden;" />
+                </div>
+                <br />
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+
+    </div>
+</div>
